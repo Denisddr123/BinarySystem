@@ -21,15 +21,12 @@ public class MyElement {
                 myElement = new MyElement();
 
                 myElements.add(myElement);
-                System.out.println(string3+" string3 "+i);
                 str = myElement.method(str.substring(i+1));
-                System.out.println(str+" str ");
                 i = -1;
 
 
             } else if ((str.charAt(i) == ')')){
                 string3 = string3+str.substring(0, i);
-                System.out.println(string3+" str.charAt(i) == )");
                 string = string3;
                 return str.substring(i+1);
 
