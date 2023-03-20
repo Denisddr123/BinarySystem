@@ -67,9 +67,9 @@ public class SumBinaryCod {
             mantissa = mantissa.substring(0,2)+","+mantissa.substring(2);
         }
         if (mantissa.charAt(0)!= mantissa.charAt(1)) {
+
             mantissa = mantissaOfReverseShiftToRight(mantissa, "01");
             order = String.copyValueOf(differenceOrdersOfReverseCode(order, str4.substring(0, order.length()-1)+"1"));
-            order = order.substring(0, order.length()-1);
         }
         while (mantissa.charAt(1) == mantissa.charAt(3)) {
             mantissa = mantissaShiftToLeftForReverse(mantissa, "01");

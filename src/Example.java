@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Example {
     public static void main(String[] args) {
-        Binary.sizeMantissa = 7;
+        Binary.sizeMantissa = 5;
         Binary.order = 4;
         Binary.fractionSize = 8;
         double x, y;
@@ -12,15 +12,24 @@ public class Example {
         System.out.println(stringElement.getString());
         System.out.println(stringElement.plusSeparator());*/
 
-        /*String[] strings1, strings2, strings3;
+        String[] strings1, strings2, strings3;
         x=ReverseAndAdditional.binaryToDouble("-1110");
-        y=ReverseAndAdditional.binaryToDouble("11101");
+        y=ReverseAndAdditional.binaryToDouble("-11101");
+        System.out.println("Вывод чисел в прямом коде");
         strings1 = Binary.normNumberToBinaryString(x);
+        System.out.println("мантисса: "+strings1[0]+" порядок: "+strings1[1]);
         strings2 = Binary.normNumberToBinaryString(y);
+        System.out.println("мантисса: "+strings2[0]+" порядок: "+strings2[1]);
         strings3 = SumBinaryCod.sumReverse(strings1, strings2);
         System.out.println("Сложение в обратном коде "+"мантисса: "+strings3[0]+" порядок: "+strings3[1]);
         strings3 = SumBinaryCod.sumAdditional(strings1, strings2);
-        System.out.println("Сложение в дополнительном коде "+"мантисса: "+strings3[0]+" порядок: "+strings3[1]);*/
+        System.out.println("Сложение в дополнительном коде "+"мантисса: "+strings3[0]+" порядок: "+strings3[1]);
+
+        /*String str1="1.1001", str2="1.1100";
+        str1="0.0101"; str2="0.0001";
+        char[] chars;
+        chars=SumBinaryCod.sumBinary(str1.toCharArray(), str2.toCharArray());
+        System.out.println(String.valueOf(chars));*/
 
         /*System.out.println("мантисса: "+strings1[0]+" порядок: "+strings1[1]);
         System.out.println("мантисса: "+strings2[0]+" порядок: "+strings2[1]);*/
